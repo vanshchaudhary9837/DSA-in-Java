@@ -1,0 +1,15 @@
+// Problem Type: Pattern Printing  
+// Question Link: https://www.naukri.com/code360/problems/triangle_6573690?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_patternproblems  
+// Approach: Use nested loops – outer loop for rows (1 to n), inner loop prints numbers from 1 to current row number (i).
+
+
+public class Solution {
+    public static void nTriangle(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+}
